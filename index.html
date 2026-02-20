@@ -1,0 +1,412 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Aishwarya Hoysal</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+
+<div id="wrapper" class="fade-in">
+
+  <!-- Intro -->
+  <div id="intro">
+    <h1>Hello, I'm<br />Aishwarya Hoysal</h1>
+    <p>SQL | Python | MS Excel | Power BI | Dashboards & Reporting | KPI Analysis & Tracking</p>
+    <ul class="actions">
+      <li><a href="#main" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+    </ul>
+  </div>
+
+  <!-- Nav -->
+  <nav id="nav">
+    <ul class="links">
+      <li class="active"><a href="index.html">Projects</a></li>
+    </ul>
+    <ul class="icons">
+      <li><a href="mailto:aishwaryahoysalks@gmail.com" class="icon solid fa-envelope"></a></li>
+      <li><a href="https://linkedin.com/in/aishwaryahoysal24" class="icon brands fa-linkedin"></a></li>
+      <li><a href="https://github.com/AishwaryaHoysal24" class="icon brands fa-github"></a></li>
+    </ul>
+  </nav>
+
+  <!-- Main -->
+  <div id="main">
+
+    <!-- Featured Project -->
+    <article class="post featured">
+      <header class="major">
+        <h2>LinkedIn Network Intelligence Dashboard</h2>
+        <p>People & Industry Analytics</p>
+      </header>
+      <ul class="actions special">
+        <li>
+          <a href="#" class="button large see-work" data-project="project1">
+            View Project
+          </a>
+        </li>
+      </ul>
+    </article>
+<!-- Posts -->
+<section class="posts">
+
+  <article class="post featured">
+  <header class="major">
+    <h2><a href="#">U.S. Sales Performance Analysis</a></h2>
+    <p>Multi-region retail sales data</p>
+  </header>
+  <a href="#" class="image main"><img src="images/salesdata-cover.png" alt="" /></a>
+  <ul class="actions special">
+    <li><a href="#" class="button large see-work" data-project="project2">View Project</a></li>
+  </ul>
+</article>
+
+<article class="post featured">
+  <header class="major">
+    <h2><a href="#">Data Professional Survey Analysis</a></h2>
+    <p>Global survey responses about the data industry</p>
+  </header>
+  <a href="#" class="image main"><img src="images/datasurvey-cover.png" alt="" /></a>
+  <ul class="actions special">
+    <li><a href="#" class="button large see-work" data-project="project3">View Project</a></li>
+  </ul>
+</article>
+
+  <article>
+    <header>
+      <span class="date"></span>
+      <h2>QGen</h2>
+      <p>Assessment Quality Analytics</p>
+    </header>
+    <a href="#" class="image fit">
+      <img src="Images/qgen-cover.png" alt="QGen" />
+    </a>
+    <ul class="actions special">
+      <li>
+        <a href="#" class="button see-work" data-project="project4">
+          View Project
+        </a>
+      </li>
+    </ul>
+  </article>
+
+  <article>
+    <header>
+      <span class="date"></span>
+      <h2>LapShop</h2>
+      <p>Laptop Pricing Intelligence & Specification Benchmarking Dashboard</p>
+    </header>
+    <a href="#" class="image fit">
+      <img src="Images/lapshop-cover.png" alt="LapShop" />
+    </a>
+    <ul class="actions special">
+      <li>
+        <a href="#" class="button see-work" data-project="project5">
+         View Project
+        </a>
+      </li>
+    </ul>
+  </article>
+
+</section>
+
+ <!-- Footer -->
+  <footer id="footer">
+    <p>~ Aishwarya Hoysal ~</p>
+  </footer>
+
+</div>
+
+<!-- PROJECT MODAL -->
+<div id="project-modal" class="project-modal">
+  <div class="project-modal-content">
+    <span class="close-modal">&times;</span>
+
+    <!-- Title -->
+    <h2 id="modal-title"></h2>
+
+    <!-- Overview -->
+    <h3>Overview</h3>
+    <ul id="modal-overview"></ul>
+
+    <h3>Data Overview</h3>
+    <ul id="modal-data"></ul>
+
+    <h3>Data Preparation & Data Modelling</h3>
+    <ul id="modal-prep"></ul>
+
+    <!-- View Dashboard -->
+    <div class="project-dashboard">
+      <a id="modal-dashboard" target="_blank" class="button primary">View Dashboard</a>
+    </div>
+
+    <!-- What I Learned -->
+    <h3>What I Learned</h3>
+    <ul id="modal-learn"></ul>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  const projects = {
+
+  project1: {
+      title: "LinkedIn Network Connection Intelligence Dashboard",
+
+      overview: [
+        "Designed an end-to-end analytics workflow on exported LinkedIn datasets (Connections, Invitations, Company Follows, Applications) to evaluate the quality of my professional network.",
+        "The objective was to assess whether my LinkedIn network was diversified across industries and roles to determine alignment between my job applications and existing connections.",
+        "The project involved independent datasets (~1.3K records), standardising company entities, and developing KPI-driven dashboards to uncover trends in industry concentration, company clustering, network growth patterns, and application-network alignment."
+      ],
+
+      dataOverview: [
+        "Data Sources: Connections dataset (~1,315 records), Invitations dataset (252 records), Organization Follows dataset (196 records), Application Insights dataset (28 applications)",
+        "Each dataset was independently structured and not relationally linked at source level. Data contained inconsistencies in company naming conventions, role categorization, null job titles, and varied textual representations of similar entities."
+      ],
+
+      dataPrep: [
+        "Cleaned and standardised raw CSV exports using Excel and Power Query.",
+        "Implemented JSON-based transformation to normalise company names into unified parent entities.",
+        "Categorised job titles into structured role buckets (Analyst, Data/AI, Engineering, Leadership, Early Careers, etc.)",
+        "Created company-type classifications (Startup, Product-Based, Consulting/IT Services, Finance, Manufacturing, etc.)",
+        "Designed calculated columns and DAX measures in Power BI to derive KPIs",
+        "The Power BI dashboard was structured across four analytical layers: Network Insights with Total connections (1,315), Year-wise growth trends, Role distribution, Industry/domain clustering, Company-type breakdown",
+        "Interest & Organization Analysis with 196 organizations followed, Distribution by startup, product-based, consulting, communities, Monthly follow trends",
+        "Network Activity with 252 total invitations, 80.95% outbound vs 19.05% inbound, Monthly interaction patterns",
+        "Application Insights with 28 total applications, Company-type distribution, Role-based application pattern, Year-wise application comparison"
+      ],
+
+      dashboard: "https://github.com/AishwaryaHoysal24/PBI_Dashboards/blob/Main/LinkedIn_Analysis_Report.pdf",
+
+      learn: [
+        "Data cleaning and transformation on independent datasets.",
+        "Worked on entity resolution (company name standardisation).",
+        "Improved role categorisation and text normalization.",
+        "Power BI modelling using calculated columns and DAX measures."
+      ]
+  },
+
+  project2: {
+    title: "U.S. Reatil Sales Performance Analysis",
+
+    overview:[
+      "Developed an interactive Power BI dashboard to analyse 9,800+ transactional records across 49 U.S. states to identify regional performance trends, segment contribution, product profitability drivers, and pricing impact on margins.",
+      "The objective was to enable decision-making for revenue optimisation and strategic regional expansion."],
+
+    dataOverview: [
+    "Source: Kaggle (Retail Superstore Dataset)",
+    "Rows: 9,800",
+    "Columns: 21",
+    "Time Period: 2015–2018",
+    "49 U.S. States, 3 Customer Segments, Multiple Product Categories",
+    "Granularity: Order-level transactional data"],
+
+    dataPrep: [
+   "Cleaned categorical inconsistencies in State and Segment fields",
+   "Validated Sales, Cost, and Profit relationships",
+   "Created calculated measures for:Total Sales, Total Profit, Profit Margin %, Year-over-Year Growth",
+   "Built date hierarchy for time intelligence analysis",
+   "Designed KPI cards for Orders, States, Segments"],
+
+
+    dashboard: "https://github.com/AishwaryaHoysal24/PBI_Dashboards/blob/Main/Sales%20Data%20from%20various%20regions%20of%20United%20States.pdf",
+
+    learn:[
+      "Applied business intelligence principles to derive actionable insights from transactional data.",
+      "Strengthened DAX proficiency for KPI calculation.",
+      "Improved ability to interpret pricing and profitability relationships."]
+  },
+
+  project3: {
+    title: "Data Professional Survey Analytics Dashboard",
+    
+    overview: [
+  "Conducted analytics on 600+ global survey responses to uncover career trends, compensation benchmarks, skill demand patterns, and satisfaction indicators across the data industry.",
+  "The objective was to identify which roles and what tools dominate the market, and how professionals perceive career difficulty and work-life balance.",
+  "Transformed raw Excel-based survey data into a structured model using Power Query and DAX, enabling multi-dimensional insights.",
+  "Designed an interactive Power BI dashboard to simulate real-world market intelligence reporting for talent analytics and career benchmarking."],
+
+  dataOverview: [
+  "600+ total survey respondents",
+  "Average age: 30 years",
+  "Geographic coverage: United States (261), India (73), Canada & Others",
+  "Key attributes captured: Job Title, Annual Salary, Country, Programming Language Preference, Work-Life Balance Rating, Salary Satisfaction Rating, Career Difficulty Perception",
+  "Data source: Raw Excel survey dataset containing inconsistent job titles, null values, and mixed salary formats",
+  "Dataset required transformation before modelling due to categorical inconsistencies and unstandardized role naming conventions"],
+
+    dataPrep: [
+  "Cleaned and transformed raw Excel survey data using Power Query (handled null values, inconsistent text entries, and formatting irregularities).",
+  "Standardised job titles into structured role categories (Data Analyst, Data Scientist, Data Engineer, Architect, Student, etc.) to enable accurate salary comparison.",
+  "Created calculated columns for age groups and salary bands to enable demographic and compensation segmentation.",
+  "Built DAX measures for: Average Salary by Role, Satisfaction Index, Work-Life Balance Score, Country-wise respondent distribution, and Programming Language frequency analysis.",
+  "Modelled relationships to enable cross-filtering between job role, geography, tool preference, and perceived career difficulty.",
+  "Designed KPI cards highlighting Total Respondents, Average Age, Salary Benchmarks, and Satisfaction Indicators."],
+
+
+  dashboard: "https://github.com/AishwaryaHoysal24/PBI_Dashboards/blob/Main/DataProfessionalSurvey.pdf",
+
+  learn: [
+  "Survey data transformation and categorical normalization for real-world analytics.",
+  "Understanding of compensation benchmarking and workforce intelligence reporting."]},
+
+  project4: {
+      title: "Academic Assessment Optimisation Platform Quality Analytics",
+
+      overview: [
+        "Designed an analytical monitoring Report to evaluate the quality, balance, and governance of automatically generated academic question papers.",
+        "While the core project is focused on assessing cognitive distribution, difficulty balance, scheme alignment, and operational trends to support academic adminis in maintaining standardized assessment practice"
+      ],
+
+      dataOverview: [
+        "621 total questions",
+        "12 subjects",
+        "60 modules across schemes (2021 & 2022)",
+        "24 generated papers",
+        "Attributes tracked: Subject, Module ID, Scheme Year, Difficulty Level (Easy / Medium / Hard), Bloom’s Taxonomy Level (L1 / L2 / L3), Paper Generation Timestamp",
+        "This is a Relational structure built in MySQL to simulate institutional-scale academic data."
+      ],
+
+      dataPrep: [
+        "Structured schema design with normalized tables (Subject, Module, Question Bank, Paper Metadata).",
+        "Defined categorical encoding for difficulty and Bloom levels.",
+        "Created aggregated measures in Power BI using DAX: Difficulty proportion percentage, Bloom distribution per module, Scheme-wise module count, Paper generation frequency trend"
+      ],
+
+      dashboard: "https://github.com/AishwaryaHoysal24/PBI_Dashboards/blob/Main/QGen.pdf",
+
+      learn: [
+        "Dashboad that helps in Cognitive Load Monitorig and Difficulty Analysis of the generated question papers"
+      ]},
+
+
+  project5: {
+    title: "Laptop Pricing Intelligence & Specification Benchmarking Dashboard",
+
+    overview: [
+        "Analysed laptop pricing patterns across manufacturers and hardware specifications using a structured CSV dataset.",
+        "The objective was to understand how attributes such as RAM, processor tier, storage type, and processor speed influence pricing distribution."
+      ],
+
+    dataOverview: [
+        "Granularity: One row per laptop model",
+        "Data type: Structured CSV",
+        "Key fields: Manufacturer, Price, RAM, HDD, Processor_Type, Processor_Speed, Processor_Gen, Processor_Level, Graphics, Resolution",
+        "The dataset includes 4 manufacturers (HP, Lenovo, ASUS, Dell) across different processor and storage configurations."
+      ],
+
+    dataPrep: [
+        "Extracted numeric values from text-based fields",
+        "Standardized manufacturer names for consistent grouping.",
+        "Categorized processors into analytical tiers (Entry, Mid, High, Other).",
+        "Created derived measures such as total storage (HDD + SSD).",
+        "Calculated measures using DAX for KPI computation."
+      ],
+
+    dashboard: "https://github.com/AishwaryaHoysal24/PBI_Dashboards/blob/Main/Laptop_Pricing.pdf",
+
+    learn: [
+        "Applied DAX measures to compute aggregated KPIs and brand-level comparisons.",
+        "How data cleaning impacts pricing accuracy and aggregation.",
+        "Improved ability to translate technical attributes into measurable business metrics."
+      ]}};
+
+  /* ================================
+     MODAL REFERENCES
+  ================================== */
+
+  const modal = document.getElementById("project-modal");
+  const modalClose = document.querySelector(".close-modal");
+
+  const modalTitle = document.getElementById("modal-title");
+  const modalOverview = document.getElementById("modal-overview");
+  const modalData = document.getElementById("modal-data");
+  const modalPrep = document.getElementById("modal-prep");
+  const modalDashboard = document.getElementById("modal-dashboard");
+  const modalLearn = document.getElementById("modal-learn");
+
+
+  /* ================================
+     OPEN MODAL
+  ================================== */
+  document.querySelectorAll(".see-work").forEach(button => {
+
+    button.addEventListener("click", function (e) {
+
+      e.preventDefault(); // prevent page jump
+
+      try {
+        const projectId = this.getAttribute("data-project");
+        const project = projects[projectId];
+
+        if (!project) {
+          console.warn("Project not found:", projectId);
+          return;
+        }
+
+        modalTitle.innerText = project.title || "";
+
+        const populateList = (el, arr) => {
+          el.innerHTML = "";
+          if (!Array.isArray(arr)) return;
+          arr.forEach(item => {
+            const li = document.createElement("li");
+            li.innerText = item;
+            el.appendChild(li);
+          });
+        };
+
+        populateList(modalOverview, project.overview);
+        populateList(modalData, project.dataOverview);
+        populateList(modalLearn, project.learn);
+        populateList(modalPrep, project.dataPrep);
+
+        modalDashboard.href = project.dashboard || "#";
+
+        modal.style.display = "flex";
+        document.body.style.overflow = "hidden";
+      } catch (err) {
+        console.error("Error opening project modal:", err);
+      }
+
+    });
+
+  });
+
+
+  /* ================================
+     CLOSE MODAL
+  ================================== */
+
+  modalClose.addEventListener("click", () => {
+    modal.style.display = "none";
+    document.body.style.overflow = "auto";
+  });
+
+  window.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      modal.style.display = "none";
+      document.body.style.overflow = "auto";
+    }
+  });
+
+});
+</script>
+
+
+</body>
+</html>
